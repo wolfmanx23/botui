@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 IBM Corp. All Rights Reserved.
+ * Copyright 2017 IBM Corp. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -82,7 +82,7 @@ texto=req.body.input.text;
 
     var respuesta;
     var request = require("request");
-    request("https://botvivienda.mybluemix.net/voicebotvivienda?texto="+texto+"&contexto="+JSON.stringify((req.body.context||{})), function(error, response, body) {
+    request("https://CONTROLADOR.mybluemix.net/voicebotvivienda?texto="+texto+"&contexto="+JSON.stringify((req.body.context||{})), function(error, response, body) {
         console.log("La espuesta de bot es:");
         respuesta=response;
         console.log("*************************************");
@@ -117,7 +117,7 @@ app.get('/mensaje', function(req, res) {
     //console.log(req);
     var respuesta;
     var request = require("request");
-    request("https://botvivienda.mybluemix.net/webbotvivienda?texto="+query+"&contexto="+JSON.stringify(contexto), function(error, response, body) {
+    request("https://CONTROLADOR.mybluemix.net/webbotvivienda?texto="+query+"&contexto="+JSON.stringify(contexto), function(error, response, body) {
         console.log("La espuesta de bot es:");
         console.log(body);
 
