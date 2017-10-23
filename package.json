@@ -1,6 +1,6 @@
 {
-  "name": "dudasvivienda",
-  "description": "Aplicacion PoC para Infonavit",
+  "name": "chatbot",
+  "description": "Chatbot generico",
   "version": "0.2.1",
   "main": "server.js",
   "scripts": {
