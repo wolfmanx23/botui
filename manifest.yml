@@ -1,0 +1,16 @@
+---
+declared-services:
+  conversation-service:
+    label: conversation
+    plan: free
+  tone-analyzer-standard:
+    label: tone_analyzer
+    plan: standard
+applications:
+- name: webbotinfonavit
+  command: npm start
+  path: .
+  instances: 1
+  memory: 2048MB
+  env:
+    NPM_CONFIG_PRODUCTION: true
